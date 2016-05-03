@@ -6,7 +6,9 @@ Time spent: 3 hours spent in total
 
 Completed user stories:
 
- * [x] Adding an Edit Feature
+* [x] Add a new ToDo Item
+* [x] Delete an item
+* [x] Edit existing item
  
 
 Walkthrough of all user stories:
