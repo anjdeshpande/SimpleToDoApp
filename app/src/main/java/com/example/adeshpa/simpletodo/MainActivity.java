@@ -77,9 +77,11 @@ public class MainActivity extends AppCompatActivity {
     public void onAddItem(View v) {
         EditText etNewItem = (EditText) findViewById(R.id.etNewItem);
         String itemText = etNewItem.getText().toString();
-        itemsAdapter.add(itemText);
-        etNewItem.setText("");
-        writeItems();
+        if (itemText.length() > 0) {
+            itemsAdapter.add(itemText);
+            etNewItem.setText("");
+            writeItems();
+        }
     }
 
     private void readItems() {
