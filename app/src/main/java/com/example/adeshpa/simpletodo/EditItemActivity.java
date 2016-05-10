@@ -31,10 +31,13 @@ public class EditItemActivity extends AppCompatActivity {
         EditText etSaveItem = (EditText) findViewById(R.id.etSaveItem);
         String itemText = etSaveItem.getText().toString();
 
+        switchView(itemText);
+    }
+
+    private void switchView(String itemText) {
         Intent appInfo = new Intent(EditItemActivity.this, MainActivity.class);
         appInfo.putExtra("itemText", itemText);
         appInfo.putExtra("itemPosition", position);
         startActivity(appInfo);
     }
-
 }
